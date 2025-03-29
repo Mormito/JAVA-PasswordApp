@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:ems="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Free Password Manager"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+
+    <EditText
+        android:id="@+id/text_input1"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:hint="Set a length for your password"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Generate"
+        android:textColorHint="@color/white"
+        android:shadowColor="@color/black"
+        android:onClick="showResults"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:text=""
+        android:ems="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+
+</LinearLayout>
