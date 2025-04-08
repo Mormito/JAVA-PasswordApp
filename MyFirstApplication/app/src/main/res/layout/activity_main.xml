@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    >
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView1"
-        android:ems="10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Free Password Manager"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        />
-
+        android:text="Password Generator"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="32dp" />
 
     <EditText
         android:id="@+id/text_input1"
-        android:layout_width="300sp"
-        android:layout_height="50sp"
-        android:layout_gravity="center_horizontal"
-        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:hint="Set a length for your password"
-        android:textAlignment="center"
-        />
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/confirm_button"
-        android:layout_width="200sp"
-        android:layout_height="50sp"
-        android:layout_gravity="center_horizontal"
-        android:hint="Generate"
-        android:textColorHint="@color/white"
-        android:shadowColor="@color/black"
-        android:onClick="showResults"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Generate Password"
+        android:backgroundTint="#3fa553"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:onClick="showResults" />
 
     <TextView
         android:id="@+id/textViewResult"
-        android:text=""
-        android:ems="10"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="30sp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000"
         android:textAlignment="center"
-        />
-
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#EEEEEE"
+        android:elevation="2dp"
+        android:lineSpacingExtra="4dp" />
 
 </LinearLayout>

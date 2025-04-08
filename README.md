@@ -3,6 +3,7 @@
 - Primeiro commit eu subi a base do código, o gerador de senhas e o criptografador. [13/03/2025]
 - Segundo commit eu subi a base em android studio, afinal era minha primeira tentativa nele. [28/03/2025]
 - Terceiro commit, criação do README, agora o aplicativo não só gera a senha com base no valor colocado no input, mas tambem exibe a senha. [07/04/2025]
+- Quarto commit, melhorias no visual do aplicativo, estilização e customização de interface. [07/04/2025]
 
 # Conceito
 
