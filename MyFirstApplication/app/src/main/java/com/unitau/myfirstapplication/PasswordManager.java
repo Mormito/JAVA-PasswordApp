@@ -1,23 +1,11 @@
+package com.unitau.myfirstapplication;
+
 import java.util.Random;
 import java.security.*;
 import java.util.concurrent.ExecutionException;
-//Senti certa dificuldade para utilizar o security, mas deu tudo certo no final.
+
 
 public class PasswordManager {
-
-    public String gerarSenha(int tamanho) {
-        Random rand = new Random();
-        StringBuilder senha = new StringBuilder();
-        String caracteres = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789!@#$%&*_";
-
-            for(int j = 0; j < tamanho; j++){
-                int indice = rand.nextInt(caracteres.length());
-                System.out.print(indice + ", ");
-                senha.append(caracteres.charAt(indice));
-            }
-
-        return senha.toString();
-    }
 
     public String criptografarSenha(String senha) {
         try{
