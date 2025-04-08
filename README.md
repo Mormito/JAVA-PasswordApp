@@ -9,7 +9,7 @@
 Conceito do app é um gerenciador de senhas, ainda não tenho 100% de certeza do que irei realmente fazer, mas essa é a base, é a meta do projeto.
 
 
-#Considerações:
+# Considerações:
 
 Infelizmente tenho pouco tempo para conseguir me dedicar 100% nesse projeto, então vamos devagar e constante por aqui! 
 Caso o aplicativo não fique do jeito que imaginei eu quero que ele pelo menos cumpra algumas funções:
