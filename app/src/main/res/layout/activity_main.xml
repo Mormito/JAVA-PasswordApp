@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerador de senhas"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/text_input1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Para que serve a senha? (Ex: Banco)"
+        android:inputType="text"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/text_input2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tamanho da senha"
+        android:inputType="number"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_uppercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-Z"
+            android:checked="true"
+            android:layout_marginEnd="16dp"
+            android:buttonTint="#3fa553"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_lowercase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a-z"
+            android:checked="true"
+            android:buttonTint="#3fa553"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <CheckBox
+            android:id="@+id/checkbox_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-9"
+            android:checked="true"
+            android:layout_marginEnd="16dp"
+            android:buttonTint="#3fa553"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_symbols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!@#"
+            android:checked="true"
+            android:buttonTint="#3fa553"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Gerar senha!"
+        android:backgroundTint="#3fa553"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:onClick="showResults" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#EEEEEE"
+        android:elevation="2dp"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
