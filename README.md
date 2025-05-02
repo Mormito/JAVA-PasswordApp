@@ -4,6 +4,7 @@
 - Segundo commit eu subi a base em android studio, afinal era minha primeira tentativa nele. [28/03/2025]
 - Terceiro commit, criação do README, agora o aplicativo não só gera a senha com base no valor colocado no input, mas tambem exibe a senha. [07/04/2025]
 - Quarto commit, melhorias no visual do aplicativo, estilização e customização de interface. [07/04/2025]
+- Quinto commit, correção de bugs, polimento, modificações na interface e na geração de senhas. [02/05/2025]
 
 # Conceito
 
@@ -15,6 +16,6 @@ Conceito do app é um gerenciador de senhas, ainda não tenho 100% de certeza do
 Infelizmente tenho pouco tempo para conseguir me dedicar 100% nesse projeto, então vamos devagar e constante por aqui! 
 Caso o aplicativo não fique do jeito que imaginei eu quero que ele pelo menos cumpra algumas funções:
 
-- Gerar a senha;
-- Criptografar a senha;
-- Exibir a saida.
+- Gerar a senha; ✅
+- Criptografar a senha; ❌
+- Exibir a saida. ✅
