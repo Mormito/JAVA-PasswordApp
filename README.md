@@ -7,6 +7,7 @@
 - Quinto commit, correção de bugs, polimento, modificações na interface e na geração de senhas. [02/05/2025]
 - Sexto commit, criação de página de política de privacidade. [05/05/2025]
 - Sétimo commit, criação do nome "StrongPass" para o app. [05/05/2025]
+- Oitavo commit, implementação de anúncios e correção de bugs. [09/05/2025]
 
 # Conceito
 
