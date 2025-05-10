@@ -1,28 +1,51 @@
 package com.unitau.myappaula05;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.CheckBox;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
+import android.os.Build;
+import android.view.WindowMetrics;
+
+import java.util.Random;
 
 
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText editText1, editText2;
     private TextView textView2;
     private Button confirmButton;
     private CheckBox checkboxUppercase, checkboxLowercase, checkboxNumbers, checkboxSymbols;
 
+    private AdView adView;
+    private FrameLayout adContainerView;
+    private final String AD_UNIT_ID = "ca-app-pub-7117707009404695/6661783671"; // id teste: ca-app-pub-3940256099942544/9214589741
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        adContainerView = findViewById(R.id.ad_view_container);
+        MobileAds.initialize(this, initializationStatus -> {});
+        loadBanner();
 
         editText1 = findViewById(R.id.text_input1);
         editText2 = findViewById(R.id.text_input2);
@@ -34,12 +57,34 @@ public class MainActivity extends AppCompatActivity {
         checkboxNumbers = findViewById(R.id.checkbox_numbers);
         checkboxSymbols = findViewById(R.id.checkbox_symbols);
 
+
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showPassword();
             }
         });
+    }
+
+    private void loadBanner() {
+        // [START create_ad_view]
+        // Create a new ad view.
+        adView = new AdView(this);
+        adView.setAdUnitId(AD_UNIT_ID);
+        // [START set_ad_size]
+        // Request an anchored adaptive banner with a width of 360.
+        adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this, 360));
+        // [END set_ad_size]
+
+        // Replace ad container with new ad view.
+        adContainerView.removeAllViews();
+        adContainerView.addView(adView);
+        // [END create_ad_view]
+
+        // [START load_ad]
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+        // [END load_ad]
     }
 
 
@@ -76,7 +121,12 @@ public class MainActivity extends AppCompatActivity {
         try {
             int tamanhoSenha = Integer.parseInt(input);
             if (tamanhoSenha <= 0) {
-                Toast.makeText(this, "Digite um número positivo!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Digite um número maior que zero!", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (tamanhoSenha > 200) {
+                Toast.makeText(this, "Numeros acima de 200 caracteres podem travar seu dispositivo!", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -98,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Digite um número válido!", Toast.LENGTH_SHORT).show();
         }
+
     }
 }
 

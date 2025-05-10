@@ -118,6 +118,19 @@
         android:padding="16dp"
         android:background="#EEEEEE"
         android:elevation="2dp"
-        android:lineSpacingExtra="4dp" />
+        android:lineSpacingExtra="4dp"
+        android:textIsSelectable="true"
+        />
+
+
+    <!-- Ad view container that fills the width of the screen and adjusts its
+     height to the content of the ad. -->
+    <FrameLayout
+        android:layout_marginTop="70px"
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true" />
 
 </LinearLayout>
