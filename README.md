@@ -9,6 +9,8 @@
 - Sétimo commit, criação do nome "StrongPass" para o app. [05/05/2025]
 - Oitavo commit, implementação de anúncios e correção de bugs. [09/05/2025]
 - Nono commit, correção na página de privacidade. [13/05/2025]
+- Décimo commit, criação de bundle. [13/05/2025]
+- Décimo primeiro commit, alterações de nome de projeto. [13/05/2025]
 
 # Conceito
 
