@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AdView adView;
     private FrameLayout adContainerView;
-    private final String AD_UNIT_ID = "ca-app-pub-3940256099942544/9214589741"; // id teste: ca-app-pub-3940256099942544/9214589741
+    private final String AD_UNIT_ID = "ca-app-pub-7117707009404695/6661783671"; // id teste: ca-app-pub-3940256099942544/9214589741
 // ca-app-pub-7117707009404695/6661783671
     @Override
     protected void onCreate(Bundle savedInstanceState) {
