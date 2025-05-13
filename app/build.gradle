@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.unitau.myappaula05'
+    namespace 'com.unitau.StrongPass'
     compileSdk 35
 
     defaultConfig {
-        applicationId "com.unitau.myappaula05"
+        applicationId "com.unitau.StrongPass"
         minSdk 24
         targetSdk 34
         versionCode 1

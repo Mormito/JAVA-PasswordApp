@@ -1,7 +1,6 @@
-package com.unitau.myappaula05;
+package com.unitau.StrongPass;
 
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -11,20 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-
-import android.os.Build;
-import android.view.WindowMetrics;
-
-import java.util.Random;
-
 
 import java.util.Random;
 
@@ -36,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AdView adView;
     private FrameLayout adContainerView;
-    private final String AD_UNIT_ID = "ca-app-pub-7117707009404695/6661783671"; // id teste: ca-app-pub-3940256099942544/9214589741
-
+    private final String AD_UNIT_ID = "ca-app-pub-3940256099942544/9214589741"; // id teste: ca-app-pub-3940256099942544/9214589741
+// ca-app-pub-7117707009404695/6661783671
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

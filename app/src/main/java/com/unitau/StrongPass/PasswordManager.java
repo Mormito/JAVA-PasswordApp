@@ -1,8 +1,6 @@
-package com.unitau.myappaula05;
+package com.unitau.StrongPass;
 
-import java.util.Random;
 import java.security.*;
-import java.util.concurrent.ExecutionException;
 
 
 public class PasswordManager {

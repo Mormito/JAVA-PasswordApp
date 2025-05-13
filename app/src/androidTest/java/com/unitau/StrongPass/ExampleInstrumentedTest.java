@@ -1,4 +1,4 @@
-package com.unitau.myappaula05;
+package com.unitau.StrongPass;
 
 import android.content.Context;
 
